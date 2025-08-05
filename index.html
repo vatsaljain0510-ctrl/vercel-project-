@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hey Ishita 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffe0e9, #fff6f0);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      max-width: 600px;
+      position: relative;
+      z-index: 10;
+    }
+    h1 {
+      color: #e63946;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .signature {
+      margin-top: 30px;
+      font-weight: bold;
+      color: #555;
+    }
+    .reply-button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/4/4f/Red_Heart.png') no-repeat center;
+      background-size: contain;
+      animation: float 10s linear infinite;
+      opacity: 0.6;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(0.5);
+        left: calc(100% * var(--i));
+      }
+      100% {
+        transform: translateY(-10vh) scale(1);
+        left: calc(100% * var(--i));
+      }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <h1>Hey Ishita 💖</h1>
+    <p>
+      Hey you know what, ever since we met on Reddit ranting about each other's exes,<br>
+      I always loved how you aren’t one of those attitude girls.<br><br>
+      Trust me, you are the sweetest girl I’ve ever met.<br>
+      I really feel comfortable sharing everything with you, and I just don’t know why,<br>
+      but you’re the one person I wanna keep updated on what happens in my business life.<br><br>
+      I don’t usually say this, but I really like the person you are.<br>
+      Just felt like telling you... No expectations, just being honest because I wanted you to know.
+    </p>
+    <div class="signature">– Vatsal</div>
+    <button class="reply-button" onclick="alert('You don’t have to reply… but if you smiled, that’s enough for me 😊')">Did it make you smile?</button>
+  </div>
+
+  <!-- Floating hearts -->
+  <div class="heart" style="--i:0.1;"></div>
+  <div class="heart" style="--i:0.3;"></div>
+  <div class="heart" style="--i:0.5;"></div>
+  <div class="heart" style="--i:0.7;"></div>
+  <div class="heart" style="--i:0.9;"></div>
+</body>
+</html>
